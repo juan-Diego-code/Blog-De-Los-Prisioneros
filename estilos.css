@@ -99,8 +99,11 @@ main#contenido {
     border-radius: 10px;
     text-align: left;
     min-width: 250px;
+    transition: transform .3s, box-shadow .3s, background-color .35s ease, color .35s ease, border-color .35s ease; 
 }
-
+#columna:hover{
+    transform:translateY(-6px)
+}
 /* Estilos de los artículos */
 article {
     background: black;
@@ -110,8 +113,11 @@ article {
     margin-bottom: 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     text-align: left;
+    transition: transform .3s, box-shadow .3s, background-color .35s ease, color .35s ease, border-color .35s ease; 
 }
-
+article:hover{
+    transform:translateY(-6px)
+}
 /* Asegura que los videos ocupen todo el ancho del artículo */
 article video {
     width: 100%;
@@ -142,36 +148,34 @@ figcaption {
 }
 
 /* Pie de página del sitio */
-footer#pie {
-    background: black;
-    color: #fff;
-    border: 1px solid white;
-    padding: 15px;
-    margin-top: 30px;
-    border-radius: 5px;
-}
-
-a#ig{
-    color: white;
-}
-a#spotify{
-    color: white;
-}
-a#youtube{
+#pie {
+    text-align: center;
+    padding: 20px;
+    background: #111;
     color: white;
 }
 
-a#ig:hover{
-    color: #FF00FF;
-    transition: 1s;
+.redes {
+    margin-top: 10px;
 }
-a#spotify:hover{
-    color: #1DB954;
-    transition: 1s;
+
+.redes a {
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
-a#youtube:hover{
-    color: red;
-    transition: 1s;
+
+#ig { background: #E1306C; }
+#sp { background: #1DB954; }
+#yt { background: #FF0000; }
+
+.redes a:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
 }
 /* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
