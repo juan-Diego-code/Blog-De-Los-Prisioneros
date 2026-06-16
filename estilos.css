@@ -8,7 +8,7 @@
 /* Estilos generales del cuerpo del documento */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: red;
+    background: #121212;
     color: white;
     text-align: center;
     line-height: 1.6;
@@ -32,7 +32,7 @@ img, video {
 
 /* Encabezado principal del sitio */
 header#principal {
-    background: black;
+    background: #c8102b;
     padding: 20px;
     border: 1px solid white;
     text-align: center;
@@ -48,7 +48,7 @@ header#principal h1 {
 
 /* Barra de navegación */
 #menu {
-    background: black;
+    background: #c8102b;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
@@ -57,7 +57,7 @@ header#principal h1 {
 }
 /* Efecto hover en los enlaces del menú */ 
 #menu li a:hover { 
-    color: red; 
+    color: #121212; 
     transition: 1s;
 }
 /* Estilos de la lista del menú */
@@ -93,7 +93,7 @@ main#contenido {
 /* Columna lateral */
 #columna {
     flex: 1;
-    background: black;
+    background: #c8102b;
     border: 1px solid white;
     padding: 20px;
     border-radius: 10px;
@@ -106,7 +106,7 @@ main#contenido {
 }
 /* Estilos de los artículos */
 article {
-    background: black;
+    background: #c8102b;
     border: 1px solid white;
     padding: 20px;
     border-radius: 10px;
